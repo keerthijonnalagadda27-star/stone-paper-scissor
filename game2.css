@@ -1,0 +1,120 @@
+*{
+    background-color:#E5E7EB;
+}
+.container {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+}
+.game {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+}
+
+.topbar{
+    height: 50px;
+    background-color:navy;
+    color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    font-family: 'Times New Roman', Times, serif
+}
+.game{
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+     
+
+}
+.buttons{
+    display: flex;
+    gap: 70px;
+}
+
+.buttons button{
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    border-radius: 20px;
+    
+}
+#stone{
+    background-image: url("stone.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    transition: 0.3s; 
+}
+#paper{
+    background-image: url("paper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    border: 2px solid black;
+    transition: 0.3s;
+}
+#scissor{
+    background-image: url("scissor.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    transition: 0.3s;
+
+}
+#stone:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(0, 0, 0, 0.4);
+
+}
+#paper:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(0, 0, 0, 0.4);
+
+}
+#scissor:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(0, 0, 0, 0.4);
+
+}
+
+#pick{
+    background-color:navy ;
+    color: gold;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 5px 20px;
+    margin: 60px auto 0; 
+}
+#pick:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(0, 0, 0, 0.4);
+
+}
+.score-board{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-size: 25px;
+    gap: 100px;
+    color: navy;
+}
+#user-score{
+    margin-left: 10px;
+    font-size:40px ;
+}
+#comp-score{
+    margin-left: 30px;
+    font-size:40px ;
+}
